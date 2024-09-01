@@ -1,11 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive quiz</title>
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Quiz Game</h1>
+    <div class="question-area">
+        <p id="question"></p>
+        <button id="option1"></button>
+        <button id="option2"></button>
+        <button id="option3"></button>
+        <button id="option4"></button>
+    </div>
+    <p>Score: <span id="score">0</span></p>
+    <button id="next-question">Next Question</button>
+    <button id="play-again" style="display: none;">Play Again</button>
+
     <script src="app.js"></script>
 </body>
 </html>
+
+
+
+
+
