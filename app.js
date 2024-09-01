@@ -3,7 +3,7 @@
 
 
 //Create an array Object for answer
-let questions = [
+var questions = [
     {
         question: "What is the best skills in Pakistan?",
         options: ["Web Development", "Amazon", "Graphic Designing", "E-commerce"],
@@ -18,12 +18,32 @@ let questions = [
         question:"Why  we learn IT skills?",
         options:["Earn Money","For Passion","For business","None of Them"],
         correct: 1
-    },
-    {
-        question:"What is your goal in the future?",
-        options:["Skills Development","Education","Diplomas","Tourism"],
-        correct:1
     }
     
+    
 ];
+var question = document.getElementById("question")
+var nextButton=document.getElementById("next-question");
 
+const questionElement = document.querySelector(".question-area");
+var currentQuestion= 0;
+var score = 0;
+var questionOne = questions[0].question;
+
+questionElement.append(questionOne)
+
+console.log(questionOne);
+
+
+function renderQuestions(){
+
+
+    
+    // questions.forEach(question =>{
+     
+
+    // })
+    // question.append(element)
+}
+
+renderQuestions()
