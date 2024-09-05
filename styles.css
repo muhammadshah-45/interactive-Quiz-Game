@@ -1,32 +1,43 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background:linear-gradient(to left,orange,orangered);
 }
-
-
-.quiz-container{
-    width: 50%;
-    display: flex;
-}
-.quiz-container {
+body {
     width: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left,orange,orangered);
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
+
+
+.quiz-container {
+    flex-direction: column;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(164, 164, 164, 0.3);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
 #question-area{
     font-family: monospace;
     font-size: 17px;
     margin-bottom: 10px;
 }
+
+
 #answer {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    width: 21%;
+    /* width: 21%; */
 }
-
 
 .score{
     

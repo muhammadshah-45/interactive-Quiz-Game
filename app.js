@@ -34,8 +34,9 @@ var score = 0;
 function startTheGame(){
     currentQuestionIndex = 0;
     score = 0;
-
+    
     nextButton.classList.add("hidden");
+    playAgainButton.classList.add("hidden")
     showQuestion(questions[currentQuestionIndex]);
     
 }
