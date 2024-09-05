@@ -75,6 +75,9 @@ function nextQuizButton(){
 }
 startTheGame()
 
-
+function changeColor(e){
+    e.style.background = "green";
+    e.style.fontWeight = "bold"
+}
 
 
