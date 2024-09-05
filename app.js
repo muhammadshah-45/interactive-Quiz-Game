@@ -22,6 +22,7 @@ var nextButton=document.getElementById("next-question");
 var answerButtons = document.querySelectorAll(".answer-btn")
 var displayScore = document.getElementById("score");
 var nextButton = document.getElementById("next-button");
+var quizContainer = document.querySelector(".quiz-container")
 
 
 var currentQuestionIndex= 0;
@@ -60,9 +61,18 @@ function selectAnswer(index){
     } else{
         alert("Try Again")
     }
-    
+    nextButton.classList.remove("hidden")
 }
 
+function nextQuizButton(){
+  currentQuestionIndex++;
+  if(currentQuestionIndex < questions.length){
+    showQuestion(questions[currentQuestionIndex]);
+    nextButton.classList.add("hidden")
+  }else{
+    quizContainer.innerText = `Your score is ${score}`
+  }
+}
 startTheGame()
 
 
