@@ -7,7 +7,7 @@ var questions = [
     {
         question: "What is the best skills in Pakistan?",
         options: ["Web Development", "Amazon", "Graphic Designing", "E-commerce"],
-        correct: 1
+        correct: 0
     },
     {
         question: "Which one is beautiful city in Pakistan",
@@ -52,6 +52,14 @@ function showQuestion(question){
 
 function selectAnswer(index){
     const question = questions[currentQuestionIndex];
+
+    if(index === question.correct){
+        score++;
+        displayScore.innerText = `Score : ${score}`;
+        alert("Correct");
+    } else{
+        alert("Try Again")
+    }
     
 }
 
