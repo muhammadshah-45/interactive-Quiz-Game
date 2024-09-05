@@ -24,9 +24,38 @@ var displayScore = document.getElementById("score");
 var nextButton = document.getElementById("next-button");
 
 
-var currentQuestion= 0;
+var currentQuestionIndex= 0;
 var score = 0;
 
+
+//Handling Click Events //
+
+function startTheGame(){
+    currentQuestionIndex = 0;
+    score = 0;
+
+    nextButton.classList.add("hidden");
+    showQuestion(questions[currentQuestionIndex]);
+    
+}
+
+function showQuestion(question){
+   // render the question to question area to display Question
+   questionArea.innerText = question.question;    
+   // render the answer choices to display Option on html
+   answerButtons.forEach((optionButtons,answerIndex)=>{
+     console.log(optionButtons); // it shows all options in the console
+     optionButtons.innerHTML = question.options[answerIndex]; // it will shows  all options
+     optionButtons.onclick = () => selectAnswer(answerIndex);
+   })
+}
+
+function selectAnswer(index){
+    const question = questions[currentQuestionIndex];
+    
+}
+
+startTheGame()
 
 
 
