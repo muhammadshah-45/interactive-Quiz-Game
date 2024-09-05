@@ -70,7 +70,7 @@ function nextQuizButton(){
     showQuestion(questions[currentQuestionIndex]);
     nextButton.classList.add("hidden")
   }else{
-    quizContainer.innerText = `Your score is ${score}`
+    endGame()
   }
 }
 startTheGame()
@@ -81,3 +81,18 @@ function changeColor(e){
 }
 
 
+function  endGame(){
+    questionArea.innerText =`Game Over! Your score is ${score}.`;
+    answerButtons.forEach((optionButtons,answerIndex)=>{
+        optionButtons.innerHTML = ""
+        answerIndex.innerHTML = ""
+    });
+    answerButtons.innerHTML = ""
+    displayScore.innerText = ""
+    nextButton.classList.add("hidden");
+    playAgainButton.classList.remove("hidden")
+    
+}
+function playBtn(){
+    startTheGame()
+}
