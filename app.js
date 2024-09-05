@@ -13,13 +13,8 @@ var questions = [
         question: "Which one is beautiful city in Pakistan",
         options: ["Peshawar", "Swat", "Murree", "Abottabad"],
         correct: 2
-    },
-    {
-        question:"Why  we learn IT skills?",
-        options:["Earn Money","For Passion","For business","None of Them"],
-        correct: 1
     }
-    
+   
     
 ];
 var question = document.getElementById("question")
