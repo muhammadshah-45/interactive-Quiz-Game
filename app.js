@@ -34,16 +34,9 @@ questionElement.append(questionOne)
 
 console.log(questionOne);
 
+var options = document.querySelectorAll(".options")
+console.log(options);
+function renderOptions(){
 
-function renderQuestions(){
-
-
-    
-    // questions.forEach(question =>{
-     
-
-    // })
-    // question.append(element)
 }
 
-renderQuestions()
