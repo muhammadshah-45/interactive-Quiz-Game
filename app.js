@@ -17,21 +17,17 @@ var questions = [
    
     
 ];
-var question = document.getElementById("question")
+var questionArea = document.getElementById("question-area")
 var nextButton=document.getElementById("next-question");
+var answerButtons = document.querySelectorAll(".answer-btn")
+var displayScore = document.getElementById("score");
+var nextButton = document.getElementById("next-button");
 
-const questionElement = document.querySelector(".question-area");
+
 var currentQuestion= 0;
 var score = 0;
-var questionOne = questions[0].question;
 
-questionElement.append(questionOne)
 
-console.log(questionOne);
 
-var options = document.querySelectorAll(".options")
-console.log(options);
-function renderOptions(){
 
-}
 
