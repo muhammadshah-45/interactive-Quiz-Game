@@ -3,27 +3,43 @@ body {
     background-color: #f0f0f0;
 }
 
-.question-area {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+#question-area{
+    font-family: monospace;
+    font-size: 17px;
 }
 
-button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
+
+.answer-btn{
+    
+    padding: 8px;
+    background: green;
+    border: 1px solid;
+    border-radius: 4px;
+    color: white;
+
+}
+.score{
+    
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'DM Sans';
+    margin-top: 11px;
+}
+
+.btn {
+    margin-bottom: 12px;
+    background-color: #28a745;
+    color: white;
     border: none;
+    padding: 9px 6px;
     border-radius: 5px;
     cursor: pointer;
+    width: 97px;
+}
+.hidden{
+    display: none;
 }
 
-button:hover {
-    background-color: #3e8e41;
-}
-
-#next-question, #play-again {
-    margin-top: 20px;
-}
 
